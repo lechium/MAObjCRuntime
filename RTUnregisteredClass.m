@@ -11,7 +11,7 @@
 
 + (id)unregisteredClassWithName: (NSString *)name withSuperclass: (Class)superclass
 {
-    return [[[self alloc] initWithName: name withSuperclass: superclass] autorelease];
+    return [[self alloc] initWithName: name withSuperclass: superclass];
 }
 
 + (id)unregisteredClassWithName: (NSString *)name
@@ -26,7 +26,7 @@
         _class = objc_allocateClassPair(superclass, [name UTF8String], 0);
         if(_class == Nil)
         {
-            [self release];
+            
             return nil;
         }
     }

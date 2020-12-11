@@ -20,7 +20,7 @@
     do
     {
         count = objc_getClassList(NULL, 0);
-        buffer = realloc(buffer, count * sizeof(*buffer));
+        buffer = (Class *)realloc(buffer, count * sizeof(*buffer));
         size = objc_getClassList(buffer, count);
     } while(size != count);
     
@@ -83,7 +83,7 @@
 + (NSArray *)rt_protocols
 {
     unsigned int count;
-    Protocol **protocols = class_copyProtocolList(self, &count);
+    Protocol *__unsafe_unretained*protocols = class_copyProtocolList(self, &count);
     
     NSMutableArray *array = [NSMutableArray array];
     for(unsigned i = 0; i < count; i++)

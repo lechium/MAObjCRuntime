@@ -15,7 +15,7 @@
 - (id)initWithObjCProtocol: (Protocol *)protocol;
 - (id)initWithName: (NSString *)name;
 
-- (Protocol *)objCProtocol;
+- (id)objCProtocol;
 - (NSString *)name;
 - (NSArray *)incorporatedProtocols;
 - (NSArray *)methodsRequired: (BOOL)isRequiredMethod instance: (BOOL)isInstanceMethod;

@@ -1,0 +1,9 @@
+Package: com.mikeash.maobjcruntime
+Name: MAObjCRuntime
+Version: 1.0
+Architecture: appletvos-arm64
+Description: Mike Ashes awesome MAObjCRuntime library ARCified and made into a handy framework
+Maintainer: Kevin Bradley
+Author: Mike Ash
+Section: System
+Tag: role::developer
