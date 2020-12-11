@@ -5,6 +5,12 @@ MAObjCRuntime is an ObjC wrapper around the Objective-C runtime APIs. If that's 
 
 MAObjCRuntime is released under a BSD license. For the official license, see the LICENSE file.
 
+My Modifications
+-----------
+
+Migrated to ARC, moved some files out of the way and created a theos tvOS library build target to build the necessary classes into a useable tvOS framework.
+
+
 Quick Start
 -----------
 
